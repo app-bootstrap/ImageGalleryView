@@ -12,13 +12,13 @@ copy `ImageGalleryView.h`, `ImageGalleryView.m` into your project.
 
 Add the following import to the top of the file:
 
-```objc
+``` objc
 #import "ImageGalleryView.h"
 ```
 
 ### Configuration
 
-```objc
+``` objc
 ImageTapView *tmpView = (ImageTapView *)[self.view viewWithTag: i];
 CGRect convertRect = [[tmpView superview] convertRect:tmpView.frame toView:self.view];
 ImageGalleryView *scrollView = [[ImageGalleryView alloc] initWithFrame:(CGRect){i * self.innerScrollView.bounds.size.width, 0, self.innerScrollView.bounds.size}];
@@ -31,6 +31,4 @@ scrollView.delegate = self;
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2015 xdf
+The MIT License
